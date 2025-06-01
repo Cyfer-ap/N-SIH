@@ -1,0 +1,80 @@
+/* App.module.css */
+.container {
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000000 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.header {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #ff6ec7;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px #ff6ec77e;
+}
+
+.card {
+  background-color: #1a1a2e;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(255, 110, 199, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.date {
+  font-size: 1rem;
+  color: #a0aec0;
+  margin-bottom: 1.5rem;
+}
+
+.explanation {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.loader {
+  color: #ff6ec7;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
